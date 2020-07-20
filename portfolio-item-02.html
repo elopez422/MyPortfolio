@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale1.0">
+    <title>Eduardo Lopez Aguirre Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kcs=" crossorigin="anonymous" />
+
+    <!-- Could be updated with my own font later -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Used for Font Awsome-->
+    <link href="path/to/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2eeec71654.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/devEduardo.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#projects" class="nav__link">My Projects</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">Project Videos</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- Introduction -->
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            <strong>PAWrking</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro"> ___________________ Developed with Xamarin Forms: using C#, XAML, and Google Firebase</p>
+        <img src="img/portfolio-02.jpg" alt="picture that represents me" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>In this video you will be able to see a user creating an account, ensuring he enters the same password. You will also notice that everything gets updated to the Firebase database in realtime when the user creates their account. Once the user logs
+            in they will be able to View Lots, Search by tieme, Thier Reservations, and Log out. In the video the user will View Lots and reserve a space for 2 hours. The user will then be able to see his reservation history. Then when the user return
+            to the Lot he will notice that his space is no longer there and it will show that 1 space is Busy. Then the user logs out.
+        </p>
+        <video width="960" height="720" controls>
+            <source src="vids/portfolio-vid-02.mp4" type="video/mp4">
+        </video>
+        <p>Difficulties: The greatest challange to this was being able to set up communication with Firebase database as it was my first time using a realtime database instead of a local one. Another struggle was being able to launch the app and make it
+            into a Cross Platform Mobile Application.
+        </p>
+        <p>How I Overcome: It took me about a week after reading countless articles online and those published by Google but, after trying several different methods I was able to get it up and running. Being able to get the application to be Cross Platform
+            was simplier than imagined as Xamarin Forms took care of most of the heavy lifting.
+        </p>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:eduardolopezaguirre422@gmail.com" class="footer__link">
+            eduardolopezaguirre422@gmail.com
+        </a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/eduardo-lopez-aguirre-13ab621b2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJ%2BLAahv4Tq6I9oVuCTj7IA%3D%3D">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/elopez422">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </li>
+
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

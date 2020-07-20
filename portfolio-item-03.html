@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale1.0">
+    <title>Eduardo Lopez Aguirre Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kcs=" crossorigin="anonymous" />
+
+    <!-- Could be updated with my own font later -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Used for Font Awsome-->
+    <link href="path/to/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2eeec71654.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/devEduardo.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#projects" class="nav__link">My Projects</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">Project Videos</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- Introduction -->
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            Japanese<strong>Word Checker</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Develop with C++ using DFA graph</p>
+        <img src="img/portfolio-03.jpg" alt="picture that represents me" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>In this video you will see a quick skim of the code that was needed for this operation to be done. Then the code will get compiled and ran. When running the Input file will be entered and the program will take effect. Returning the word that was
+            found and what kind of word that is i.e. PRONOUN, OBJECT, etc. It first checks the words using a DFA to see if in fact it is a Japanese word, then it will check what kind of word it is using another DFA by using the location of the word and
+            other words that come before it.
+        </p>
+        <video width="960" height="720" controls>
+            <source src="vids/portfolio-vid-03.mp4" type="video/mp4">
+        </video>
+        <p>Difficulties: The greatest struggle was that I am neither fluent or understand Japanese outside of my Anime knowledge. Another difficulty was configuring rules in which the language useses to create a DFA graph. Aside from getting the program
+            to verify if it was a Japanese word, being able to determine what kind of word it is was equally as difficult being below a novice in the language.
+        </p>
+        <p>How I Overcome: Luckily my professor at the time was Japanese and we had several Japanese foreign exchange students, I used their knowledge to my advantage. My professor was the greatest help as she was an avid coder and fluent in the language.
+        </p>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:eduardolopezaguirre422@gmail.com" class="footer__link">
+            eduardolopezaguirre422@gmail.com
+        </a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/eduardo-lopez-aguirre-13ab621b2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJ%2BLAahv4Tq6I9oVuCTj7IA%3D%3D">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/elopez422">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </li>
+
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
